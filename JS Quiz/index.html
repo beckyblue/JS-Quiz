@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JH Consulting Mock Up</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+<h1>SLII Mock Quiz</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+<p class= "situations">A team member was just promoted, but
+lacks the training. A disire to have the training done is high but time
+is limited.</p>
+
+</br>
+
+<p class = "questions">What is the goal?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">What is the individual's <strong>competence</strong>?</p>
+<select name="question2">
+  <option value="high-competence">High Competence</option>
+  <option value="mod-high-competence">Moderate to High Competence</option>
+  <option value="low-some-competence">Low to Some Competence</option>
+  <option value="low-competence">Low Competence</option>
+</select>
+
+<br>
+
+<p class = "questions">What is the individual's commitment?</p>
+
+<select name="question3">
+  <option value="high">High Commitment</option>
+  <option value="mod-high">Variable Commitment</option>
+  <option value="low-some">Low Commitment</option>
+</select>
+
+
+<p class = "questions">What is the individual's developement level on the goal?</p>
+
+<input type = "radio" id = "mc" name = "question4" value = "D4"> D4: High Competence & High Commitment<br>
+<input type = "radio" id = "mc" name = "question4" value = "D3"> D3: Moderate to High Competence & Variable Commitment<br>
+<input type = "radio" id = "mc" name = "question4" value = "D2"> D2: Low to Some Competence & Low Commitment<br>
+<input type = "radio" id = "mc" name = "question4" value = "D1"> D1: Low Competence & High Commitment<br>
+
+<input id = "submit_button" type = "button" value = "Submit Answers" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p> <!-- ADD IN TALL and DB-->
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+
+</body>
